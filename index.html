@@ -5,11 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="buttons.css">
 </head>
 <body>
-    
+    <div class="container">
 
+    </div>
+    <div class="container">
+        <div id= "continue-btn" class="continue-button">
+          <div class="line-container">
+            <span class="text">Continue</span>
+            <div class="line line--top-left line--thick thick-line--short"></div>
+            <div class="line line--top-right line--thick thick-line--short"></div>
+            <div class="line line--bottom-left line--thick thick-line--long"></div>
+            <div class="line line--bottom-right line--thick thick-line--long"></div>
+            <div class="line line--top line--thin"></div>
+            <div class="line line--bottom line--thin"></div>
+          </div>
+        </div>
+      </div>
+      <div id="bg-video-div" class="bg-video-wrap">
+        <video src="src/transition-1.mp4" loop muted autoplay>
+        </video>
+        <div class="overlay">
+        </div>
+        <h1>Megalith 2023
+        </h1>
+        <p>India's Largest Civil Engineering Fest
+
+          25th March - 27th March 2022
+          
+          IIT Kharagpur</p>
+      </div>
+      <audio autoplay controls loop src="src/melodyloops-preview-indian-temple-2m30s.mp3"></audio>
+      <button id="music-button" class="music-btn">
+        <i class="fas fa-volume-up"></i>
+      </button>
     <script src="home.js"></script>
 </body>
 </html>
+
+<!-- autoplay hidden controls loop -->
+ <!-- https://youtube.com/clip/UgkxtNQ6jeRYxiGXf5yMy6AY6s2ZAmtExauN -->

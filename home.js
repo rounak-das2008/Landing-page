@@ -32,3 +32,49 @@ document.addEventListener('mousemove', e => {
     document.documentElement.style.setProperty('--cursorY2', Y2 + 'px');
   });
 });
+
+// For Continue button loading ------
+document.getElementById("continue-btn").style.display = "none";
+
+function showStuff() {
+    document.getElementById("continue-btn").style.display = "inline";
+}
+// function myFunction() {
+//     window.location = "index.html"
+// }
+
+// setTimeout(showStuff, 5000);
+$(window).on('load', function() {
+  $('.continue-button').delay(6000).fadeIn()
+})
+
+
+const button = document.querySelector("#music-button");
+const icon = document.querySelector("#music-button > i");
+const audio = document.querySelector("audio");
+
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  button.classList.add("fade");
+});
+
+
+const targetDiv = document.getElementById("bg-video-div");
+const btn = document.getElementById("continue-btn");
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
