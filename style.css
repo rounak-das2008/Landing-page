@@ -1,0 +1,7 @@
+.video-container {
+  position: fixed;
+}
+#video {
+  width: 50%;
+  height: 50%;
+}
