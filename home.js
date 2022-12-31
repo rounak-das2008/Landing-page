@@ -88,8 +88,21 @@ $(document).ready(function () {
       $("#bg-video-div").fadeOut();
       $("#buttonHide").fadeIn();
     } else {
-      $("#bg-video-div").fadeIn(5500);
+      $("#bg-video-div").fadeIn(4000);
       $("#buttonHide").fadeOut();
+      // $("#video").fadeIn(4000);
+      // setTimeout(() => {
+      //   $("nav").addClass("fadeIn");
+      // }, 11000);
+      // setTimeout(() => {
+      //   $("#about-monument").addClass("fadeIn");
+      // }, 11000);
+      // setTimeout(() => {
+      //   $("#bell-container").addClass("fadeIn");
+      // }, 11000);
+      // setTimeout(() => {
+      //   $("#first-heading").addClass("fadeIn");
+      // }, 14000);
     }
   });
 });
@@ -101,22 +114,37 @@ playPause.addEventListener("click", function () {
     video.play();
   } else video.pause();
 });
-video.addEventListener("timeupdate", function () {
-  if (this.currentTime >= 7) {
-    this.pause();
-  }
-});
-//====================TRANSITIONS FOR THE TEXT=================
+// var playOnce = true;
+// video.addEventListener("timeupdate", function () {
+//   if (video.currentTime >= 7 && playOnce === true) {
+//     video.pause();
+//     playOnce = false;
+//   }
+// });
+//====================TRANSITIONS FOR THE TEXT AND NAVBAR AND STUFF===================
+// setTimeout(() => {
+//   $("nav").addClass("fadeIn");
+// }, 11000);
+// setTimeout(() => {
+//   $("#about-monument").addClass("fadeIn");
+// }, 11000);
+// setTimeout(() => {
+//   $("#bell-container").addClass("fadeIn");
+// }, 11000);
+// setTimeout(() => {
+//   $("#first-heading").addClass("fadeIn");
+// }, 14000);
 setTimeout(function () {
   $("#first-heading").addClass("fadeOut");
-}, 15000);
+}, 29000);
 $("#second-heading").addClass("display-n");
 setTimeout(function () {
   $("#second-heading").removeClass("display-n").addClass("display-b fadeIn");
-}, 22000);
+}, 36000);
 setTimeout(function () {
   $("#second-heading").addClass("fadeOut");
-}, 32000);
+}, 46000);
+
 // ---------Responsive-navbar-active-animation-----------
 function test() {
   var tabsNewAnim = $("#navbarSupportedContent");
