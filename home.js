@@ -101,7 +101,22 @@ playPause.addEventListener("click", function () {
     video.play();
   } else video.pause();
 });
-
+video.addEventListener("timeupdate", function () {
+  if (this.currentTime >= 7) {
+    this.pause();
+  }
+});
+//====================TRANSITIONS FOR THE TEXT=================
+setTimeout(function () {
+  $("#first-heading").addClass("fadeOut");
+}, 15000);
+$("#second-heading").addClass("display-n");
+setTimeout(function () {
+  $("#second-heading").removeClass("display-n").addClass("display-b fadeIn");
+}, 22000);
+setTimeout(function () {
+  $("#second-heading").addClass("fadeOut");
+}, 32000);
 // ---------Responsive-navbar-active-animation-----------
 function test() {
   var tabsNewAnim = $("#navbarSupportedContent");

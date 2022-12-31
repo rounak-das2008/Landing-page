@@ -81,5 +81,8 @@
   transform: translate(0, 0);
 }
 .ButtonHideAfter {
-  margin-top: 5%;
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  bottom: 5%;
 }
