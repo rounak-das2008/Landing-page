@@ -145,7 +145,22 @@ video {
   font-family: "MedievalSharp", cursive;
 }
 .add-on{
-  width: 40%;
+  width: 50%;
+  position: unset;
+  /* text-align: initial; */
+  margin: 0 0 0 5%;
+}
+.schedule-button{
+  position: absolute;
+  margin: 2%;
+  top: 78%;
+  left: 70%;
+}
+.register-button{
+  position: absolute;
+  margin: 2%;
+  top: 78%;
+  left: 80%;
 }
 #second-heading {
   text-align: center;

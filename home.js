@@ -214,7 +214,23 @@ jQuery(document).ready(function ($) {
   // Add active class to target link
   target.parent().addClass("active");
 });
+// Tab-Pane change function
+function tabChange() {
+  var tabs = $('.navbar-nav > li');
+  var active = tabs.filter('.active');
+  var next = active.next('li').length? active.next('li').find('a') : tabs.filter(':first-child').find('a');
+  next.tab('show');
+}
+$(function(){
+  $('.navbar-nav a').click(function(e) {
+      e.preventDefault();
+      // clearInterval(tabCycle);
+      $(this).tab('show')
+      // tabCycle = setInterval(tabChange, 5000);
+  });
+});
 
+//Continue Button JS
 $.fn.boom = function (e) {
   var colors = [
     "#ffb3f6",

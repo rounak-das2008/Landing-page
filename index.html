@@ -53,85 +53,120 @@
           <i class="fas fa-bars text-white"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto nav nav-tabs">
             <div class="hori-selector">
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)"
+            <li class="nav-item active">
+              <a class="nav-link" data-toggle="tab" href="#home"
                 >Home</a
               >
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="javascript:void(0)"
+            <li class="nav-item ">
+              <a class="nav-link" data-toggle="tab" href="#events"
                 >Events</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)"
+              <a class="nav-link"  data-toggle="tab" href="#workshop"
                 >Workshop</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)"
+              <a class="nav-link" data-toggle="tab" href="#sponsors"
                 >Sponsors</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)"
+              <a class="nav-link" data-toggle="tab" href="#team"
                 >Team</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)"
+              <a class="nav-link" data-toggle="tab" href="#theme"
                 >Theme</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)"
+              <a class="nav-link" data-toggle="tab" href="#register"
                 >Register</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)"
+              <a class="nav-link" data-toggle="tab" href="#contactUs"
                 >Contact Us</a
               >
             </li>
           </ul>
         </div>
       </nav>
-      <div id="first-heading" class="first-heading" style="display: none">
-        <img class="logo-image" src="./src/images/main-logo.png" alt="logo">
-        <h1 style="margin: 2%; font-size: 3.5rem;" >Advitiya: essence of Ancient india</h1>
-        <div class="add-on">
-          <h1 style="font-size: 1.5rem;">India's Largest Civil Engineering Fest</h1>
-          <h1 style="font-size: 1.5rem;">3rd - 5th March 2023</h1>
-          <h1 style="font-size: 1.5rem;">IIT Kharagpur</h1>
-        </div>
-      </div>
-      <div id="second-heading" style="display: none">
-         <h1>About Us!!!</h1>
-      </div>
-      <!-- <h1 id="third-heading" >
-        YO!!
-      </h1> -->
-      <div id="buttonHideAfter" class="ButtonHideAfter" style="display: none">
-        <div class="container">
-          <div id="continue-btn-after" class="continue-button-after">
-            <div class="btn-contain">
-              <button class="btn">Continue</button>
-              <div class="btn-particles"></div>
-            </div>
+      <div class="tab-content">
+        <div class="tab-pane active" id="home">
+          <div id="first-heading" class="first-heading" style="display: none">
+            <img class="logo-image" src="./src/images/main-logo.png" alt="logo">
+            <h1 style="margin: 0% 2% 2% 2%; font-size: 3.5rem;" >Advitiya: essence of Ancient india</h1>
+              <div class="schedule-button">
+                <button class="btn">Schedule</button>
+                <div class="btn-particles"></div>
+              </div>
+              <div class="register-button">
+                <button class="btn">Register</button>
+                <div class="btn-particles"></div>
+              </div>
+            
+            <div class="add-on">
+              <h1 style="font-size: 1.5rem;">India's Largest Civil Engineering Fest</h1>
+              <h1 style="font-size: 1.5rem;">3rd - 5th March 2023</h1>
+              <h1 style="font-size: 1.5rem;">IIT Kharagpur</h1>
             </div>
           </div>
+          <div id="second-heading" style="display: none">
+             <h1>About Us!!!</h1>
+          </div>
+          <!-- <h1 id="third-heading" >
+            YO!!
+          </h1> -->
+          <div id="buttonHideAfter" class="ButtonHideAfter" style="display: none">
+            <div class="container">
+              <div id="continue-btn-after" class="continue-button-after">
+                <div class="btn-contain">
+                  <button class="btn">Continue</button>
+                  <div class="btn-particles"></div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div id="bell-container" class="bell-container" style="display: none">
+              <i class="fa fa-bell" id="bell" aria-hidden="true"></i>
+            </div>
+            <div id="about-monument" class="about-monument" style="display: none">
+              <img src="./src/images/abc.png" alt="hello">
+            </div>
         </div>
-        <div id="bell-container" class="bell-container" style="display: none">
-          <i class="fa fa-bell" id="bell" aria-hidden="true"></i>
+        <div class="tab-pane" id="events">
+          <h1 style="position: absolute; top: 50%; left: 45%;">Events</h1>
         </div>
-        <div id="about-monument" class="about-monument" style="display: none">
-          <img src="./src/images/abc.png" alt="hello">
+        <div class="tab-pane" id="workshop">
+          <h1 style="position: absolute; top: 50%; left: 45%;">Workshop</h1>
         </div>
+        <div class="tab-pane" id="sponsors">
+          <h1 style="position: absolute; top: 50%; left: 45%;">Sponsors</h1>
+        </div>
+        <div class="tab-pane" id="team">
+          <h1 style="position: absolute; top: 50%; left: 45%;">Team</h1>
+        </div>
+        <div class="tab-pane" id="theme">
+          <h1 style="position: absolute; top: 50%; left: 45%;">Theme</h1>
+        </div>
+        <div class="tab-pane" id="register">
+          <h1 style="position: absolute; top: 50%; left: 45%;">Register</h1>
+        </div>
+        <div class="tab-pane" id="contactUs">
+          <h1 style="position: absolute; top: 50%; left: 45%;">Contact Us</h1>
+        </div>
+      </div>
+      
     </div>
     <audio
       autoplay
