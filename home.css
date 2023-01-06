@@ -135,15 +135,17 @@ video {
   text-align: center;
   color: #fff;
   position: absolute;
-  margin: 10%;
-  z-index: 5;
+  margin: 5% 10%;
   width: 75%;
   top: 0;
-  bottom: 0;
+  
   left: 0;
-  right: 0;
-  height: 10px;
+
+
   font-family: "MedievalSharp", cursive;
+}
+.add-on{
+  width: 40%;
 }
 #second-heading {
   text-align: center;
@@ -162,6 +164,11 @@ video {
 i {
   margin-right: 10px;
 }
+.logo-image{
+  width: 64%;
+  
+}
+/* ====================NAVBAR START=============== */
 .navbar {
   z-index: 4;
   position: absolute;
@@ -312,30 +319,6 @@ i {
 .display-b {
   display: block;
 }
-/* .first-heading {
-  animation: fadeOut1 5s linear 10s;
-  animation-fill-mode: forwards;
-} */
-/* .second-heading-transition {
-  animation: fadeIn2 5s linear;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeOut1 {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeIn2 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
 .fadeIn {
   animation: fadeInAnimation 5s linear;
   animation-fill-mode: forwards;

@@ -90,60 +90,68 @@ $(document).ready(function () {
     } else {
       $("#bg-video-div").fadeIn(4000);
       $("#buttonHide").fadeOut();
-      // $("#video").fadeIn(4000);
-      // setTimeout(() => {
-      //   $("nav").addClass("fadeIn");
-      // }, 11000);
-      // setTimeout(() => {
-      //   $("#about-monument").addClass("fadeIn");
-      // }, 11000);
-      // setTimeout(() => {
-      //   $("#bell-container").addClass("fadeIn");
-      // }, 11000);
-      // setTimeout(() => {
-      //   $("#first-heading").addClass("fadeIn");
-      // }, 14000);
+      if ($("#video").css("display") === "none") {
+        // $("#video").addClass('display-b')
+        $("#video").fadeIn();
+        $("#navbarId").delay(10000).fadeIn(1000);
+        $("#about-monument").delay(10000).fadeIn(1000);
+        $("#bell-container").delay(10000).fadeIn(1000);
+        $("#first-heading").delay(14000).fadeIn(1000);
+        $("#buttonHideAfter").delay(15000).fadeIn(1500);
+      }
     }
   });
 });
-
 var playPause = document.getElementById("continue-btn-after");
 var video = document.getElementById("video");
-playPause.addEventListener("click", function () {
-  if (video.paused === true) {
-    video.play();
-  } else video.pause();
+var playOnce = true;
+video.addEventListener("timeupdate", function () {
+  if (video.currentTime >= 16 && playOnce === true) {
+    video.pause();
+    playOnce = false;
+  }
 });
-// var playOnce = true;
-// video.addEventListener("timeupdate", function () {
-//   if (video.currentTime >= 7 && playOnce === true) {
-//     video.pause();
-//     playOnce = false;
-//   }
-// });
+
+playPause.addEventListener("click", function () {
+  let forFirstHeading = true;
+  if (video.paused === true && forFirstHeading === true) {
+    video.play();
+    $("#buttonHideAfter").fadeOut(2000);
+    $("#first-heading").removeClass("display-b").addClass("display-n fadeOut");
+    forFirstHeading = false;
+  }
+  var toActivateSecondHeading = true;
+  if (toActivateSecondHeading === true) {
+    $("#second-heading").delay(10000).fadeIn(5000);
+    $("#buttonHideAfter").delay(12000).fadeIn(1500);
+    setTimeout(function () {
+      video.pause();
+    }, 15000);
+    var forSecondHeading = true;
+    playPause.addEventListener("click", function () {
+      if (video.paused === true && forSecondHeading === true) {
+        video.play();
+        $("#buttonHideAfter").fadeOut(5000);
+        $("#second-heading")
+          .removeClass("display-b")
+          .addClass("display-n fadeOut");
+        forSecondHeading = false;
+      }
+    });
+  }
+});
+
+// $("#second-heading").addClass("display-n");
+
 //====================TRANSITIONS FOR THE TEXT AND NAVBAR AND STUFF===================
-// setTimeout(() => {
-//   $("nav").addClass("fadeIn");
-// }, 11000);
-// setTimeout(() => {
-//   $("#about-monument").addClass("fadeIn");
-// }, 11000);
-// setTimeout(() => {
-//   $("#bell-container").addClass("fadeIn");
-// }, 11000);
-// setTimeout(() => {
-//   $("#first-heading").addClass("fadeIn");
-// }, 14000);
-setTimeout(function () {
-  $("#first-heading").addClass("fadeOut");
-}, 29000);
-$("#second-heading").addClass("display-n");
-setTimeout(function () {
-  $("#second-heading").removeClass("display-n").addClass("display-b fadeIn");
-}, 36000);
-setTimeout(function () {
-  $("#second-heading").addClass("fadeOut");
-}, 46000);
+
+// setTimeout(function () {
+//   $("#second-heading").removeClass("display-n").addClass("display-b fadeIn");
+// }, 36000);
+// // $("#buttonHideAfter").delay(1000).fadeIn(1000);
+// setTimeout(function () {
+//   $("#second-heading").addClass("fadeOut");
+// }, 46000);
 
 // ---------Responsive-navbar-active-animation-----------
 function test() {

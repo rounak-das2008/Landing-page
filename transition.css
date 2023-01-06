@@ -34,14 +34,14 @@
   border-radius: 2rem;
   margin: 1rem auto;
 }
-.navigation a:hover {
+/* .navigation a:hover {
   background-color: #252525;
   color: #fdfdfd;
 }
 .navigation a.active {
   background-color: #252525;
   color: #fdfdfd;
-}
+} */
 
 #page {
   min-width: 100vw;

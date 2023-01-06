@@ -38,9 +38,11 @@
       
     </div>
     <div id="bg-video-div" class="bg-video-wrap" style="display: none">
-      <video id="video" src="./src/Untitled.mp4" loop muted autoplay></video>
-      <nav id="navbarId" class="navbar navbar-expand-custom navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="#">Megalith '23</a>
+      <video id="video" src="./src/Untitled.mp4" loop muted autoplay style="display: none"></video>
+      <nav id="navbarId" class="navbar navbar-expand-custom navbar-mainbg" style="display: none">
+        <a class="navbar-brand navbar-logo" href="#">
+          <img style="width: 12%; padding: 0%;" src="./src/images/logo52.png" alt="logo">
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -99,20 +101,22 @@
           </ul>
         </div>
       </nav>
-      <div id="first-heading" class="first-heading">
-        <h1>Megalith 2023</h1>
-        <h1>Advitiya: essence of Ancient india</h1>
-        <h1>India's Largest Civil Engineering Fest</h1>
-        <h1>3rd March - 5th March 2023</h1>
-        <h1>IIT Kharagpur</h2>
+      <div id="first-heading" class="first-heading" style="display: none">
+        <img class="logo-image" src="./src/images/main-logo.png" alt="logo">
+        <h1 style="margin: 2%; font-size: 3.5rem;" >Advitiya: essence of Ancient india</h1>
+        <div class="add-on">
+          <h1 style="font-size: 1.5rem;">India's Largest Civil Engineering Fest</h1>
+          <h1 style="font-size: 1.5rem;">3rd - 5th March 2023</h1>
+          <h1 style="font-size: 1.5rem;">IIT Kharagpur</h1>
+        </div>
       </div>
-      <h1 id="second-heading" >
-        About Us!!!
-      </h1>
+      <div id="second-heading" style="display: none">
+         <h1>About Us!!!</h1>
+      </div>
       <!-- <h1 id="third-heading" >
         YO!!
       </h1> -->
-      <div id="buttonHideAfter" class="ButtonHideAfter" style="display: block">
+      <div id="buttonHideAfter" class="ButtonHideAfter" style="display: none">
         <div class="container">
           <div id="continue-btn-after" class="continue-button-after">
             <div class="btn-contain">
@@ -122,10 +126,10 @@
             </div>
           </div>
         </div>
-        <div id="bell-container" class="bell-container">
+        <div id="bell-container" class="bell-container" style="display: none">
           <i class="fa fa-bell" id="bell" aria-hidden="true"></i>
         </div>
-        <div id="about-monument" class="about-monument">
+        <div id="about-monument" class="about-monument" style="display: none">
           <img src="./src/images/abc.png" alt="hello">
         </div>
     </div>
