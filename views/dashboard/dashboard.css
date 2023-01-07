@@ -53,7 +53,7 @@ body {
  */
 .content-wrapper,
 .main-footer {
-    background-image: url(archaeological-2370325.jpg);
+    background-image: url(baraimambara.jpg);
     background-size: 1290px;
     background-repeat: no-repeat;
     background-position: center;
@@ -5162,12 +5162,14 @@ table.text-center th {
   top: 0;
   left: 0;
 }
-
-.card__front {
-    background-image: url("https://res.cloudinary.com/koliokolev/image/upload/v1566838744/alexis-antoine-kXMe4hugFA4-unsplash.jpg");
+.card_fornt1{
+  background-image: url("golcondafort.jpg");
   background-size: cover;
 }
-
+.card_front2{
+  background-image: url("gwaliorfort.jpg");
+  background-size: cover;
+}
 .card__back {
   background:  #000000c7;
   opacity: 0;
